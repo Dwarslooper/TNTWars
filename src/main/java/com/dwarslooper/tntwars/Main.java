@@ -5,6 +5,8 @@ import com.dwarslooper.tntwars.commands.MainCommand;
 import com.dwarslooper.tntwars.listener.ChatListener;
 import com.dwarslooper.tntwars.listener.PlayerListener;
 import com.dwarslooper.tntwars.listener.ServerListener;
+import com.dwarslooper.tntwars.lobby.GameLobby;
+import com.dwarslooper.tntwars.lobby.LobbyHandler;
 import com.dwarslooper.tntwars.shop.ShopManager;
 import com.dwarslooper.tntwars.utility.Config;
 import com.dwarslooper.tntwars.utility.Screen;
@@ -58,6 +60,9 @@ public final class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        for(GameLobby lobby : LobbyHandler.GAMES) {
+            LobbyHandler.resetGame(lobby.getArena());
+        }
     }
 
     public static Main getInstance() {
