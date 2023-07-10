@@ -124,7 +124,6 @@ public class MainCommand implements CommandExecutor, TabCompleter {
                 sender.sendMessage(Main.PREFIX + translate("::command.lang.error"));
                 return false;
             }
-            System.out.println("!" + args[1] + "!");
             Main.getInstance().getConfig().set("language", args[1]);
             Main.getInstance().saveConfig();
             sender.sendMessage(Main.PREFIX + translate("::command.lang.success", args[1]));
