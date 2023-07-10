@@ -1,0 +1,38 @@
+# ==================================================================================
+#
+#  ████████╗███╗   ██╗████████╗██╗    ██╗ █████╗ ██████╗ ███████╗
+#  ╚══██╔══╝████╗  ██║╚══██╔══╝██║    ██║██╔══██╗██╔══██╗██╔════╝
+#     ██║   ██╔██╗ ██║   ██║   ██║ █╗ ██║███████║██████╔╝███████╗
+#     ██║   ██║╚██╗██║   ██║   ██║███╗██║██╔══██║██╔══██╗╚════██║
+#     ██║   ██║ ╚████║   ██║   ╚███╔███╔╝██║  ██║██║  ██║███████║
+#     ╚═╝   ╚═╝  ╚═══╝   ╚═╝    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#                                                                   by Dwarslooper
+# ==================================================================================
+# This file is uses for configuring the plugin. To reset the config to default,
+# just delete the whole file and restart the server. The config will be reset.
+# For help, feel free to join our Discord. (It's mostly in german but we'll help)
+# https://dwarslooper.com/?re=discord
+# ==================================================================================
+
+# Main Language, can be changed ingame (default en_us)
+language: en_us
+
+# Limits the speed a player can perform certain actions (seconds)
+ratelimit: 2
+
+# Enabled debug mode. Good for finding issues
+debug: false
+
+# Commands which should be blocked ingame (without "/"); leave empty to disable
+blocked-commands:
+  - ec
+  - enderchest
+
+# ================================================
+# Used by the plugin internally. Do not modify!
+# ================================================
+
+has-init: false
+version: 8
+
+# That's it! You've reached the end! But.. Where's the dragon?
