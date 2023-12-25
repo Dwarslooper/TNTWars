@@ -53,4 +53,4 @@ If you use **ANY** code from this source:
 - You must clearly and prominently state to all end users that you are using code from this project.
 - Your application must also be licensed under the same license.
 
-*If you have any other questions, feel free to ask in our [Discord](https://dwarslooper.com/discord) server.*
+*If you have any other questions, feel free to ask in our [Discord](https://dwarslooper.com/?re=discord) server.*
